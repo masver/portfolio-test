@@ -4,10 +4,28 @@
     gap: 2rem;
 }
 
+@media (max-width: 629.75px) {
+    .works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 424.75px) {
+    .works {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
 .work {
 
     height: 21rem;
     position: relative;
+    &:hover {
+        z-index: 2;
+    }
     &__link {
         position: relative;
         width: 100%;
@@ -74,6 +92,7 @@
     }
 
     &__tech {
+        display: block;
         color: #fff;
         font-size: 2rem;
     }
@@ -85,7 +104,7 @@
 
     &__link:hover {
         min-height: 30rem;
-
+        
         .work__img img {
             opacity: 1;
         }
