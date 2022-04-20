@@ -35,11 +35,15 @@
 
     &__img {
         min-height: 150px;
-        font-family: 'Tourney', sans-serif;
+        font-family: 'Tourney', cursive;
         font-weight: 800;
+        font-size: 4rem;
+        text-transform: uppercase;
     }
 
-    &__img img {}
+    &__img img {
+        height: 100px;
+    }
 
     &__title {
         font-size: 2rem;
@@ -60,7 +64,7 @@
         transform: translateY(-50px);
     }
 
-    &:hover .skill_title {
+    &:hover .skill__title {
         transform: translateY(0px);
         opacity: 1;
         visibility: visible;
